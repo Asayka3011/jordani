@@ -36,14 +36,14 @@ function myFunction2() {
     card.style.display = 'block'
     card.querySelector('.img').src = card2.querySelector('.img').src
     card.querySelector('.title').innerText = card2.querySelector('.title').innerText
-    card.querySelector('.descr').innerText = card1.querySelector('.descr').innerText
+    card.querySelector('.descr').innerText = card2.querySelector('.descr').innerText
 }
 
 function myFunction3() {
     card.style.display = 'block'
     card.querySelector('.img').src = card3.querySelector('.img').src
     card.querySelector('.title').innerText = card3.querySelector('.title').innerText
-    card.querySelector('.descr').innerText = card1.querySelector('.descr').innerText
+    card.querySelector('.descr').innerText = card3.querySelector('.descr').innerText
 }
 
 const popup = document.querySelector('.popup')
@@ -54,11 +54,11 @@ const popupCard = document.getElementById('popup__sneaker')
 popupOpen.addEventListener('click', function open() {
     popup.classList.add('active')
     popupCard.querySelector('.img').src = card.querySelector('.img').src
-    popupCard.querySelector('.title') = card.querySelector('.title')
-    popupCard.querySelector('.descr') = card.querySelector('.descr')
+    popupCard.querySelector('.title').innerText = card.querySelector('.title').innerText
+    popupCard.querySelector('.descr').innerText = card.querySelector('.descr').innerText
 })
 
 popupClose.addEventListener('click', function close() {
-    popup.classList.remove('active')   
+    popup.classList.remove('active')
 })
 
